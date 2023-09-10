@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>Калькулятор</title>
+    <script src="app.js" defer></script>
+  </head>
+  <p class="d-flex justify-content-center m-0 fs-1 fw-bold">Калькулятор</p>
+  <body class="bg-black text-light">
+    <div class="container w-50 pt-5">
+      <input
+        type="number"
+        id="input1"
+        class="form-control mb-2"
+        value="10"
+        min="0"
+        placeholder="Введите 1 число"
+      />
+      <input
+        type="number"
+        id="input2"
+        class="form-control mb-2"
+        value="5"
+        min="0"
+        placeholder="Введите 2 число"
+      />
+
+      <div class="d-flex mb-2">
+        <button
+          type="button"
+          class="btn btn-success flex-grow-1 mx-2"
+          id="plus"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          class="btn btn-danger flex-grow-1 mx-2"
+          id="minus"
+        >
+          -</button
+        ><br />
+      </div>
+
+      <div class="d-flex mb-2">
+        <button
+          type="button"
+          class="btn btn-secondary flex-grow-1 mx-2"
+          id="share"
+        >
+          ÷
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary flex-grow-1 mx-2"
+          id="multiply"
+        >
+          *</button
+        ><br />
+      </div>
+
+      <div class="d-flex mb-2">
+        <button
+          type="button"
+          class="btn btn-warning flex-grow-1 mx-2"
+          id="percent"
+        >
+          %
+        </button>
+      </div>
+      <button class="btn btn-outline-info w-100 mb-2 id" id="submit">
+        Вычислить
+      </button>
+      <div style="border-radius: 5px" class="text-bg-light p-3 text-center">
+        <h4 class="fs-3">Результат:</h4>
+        <p id="result" class="mb-0 fs-5">49</p>
+      </div>
+    </div>
+  </body>
+</html>
